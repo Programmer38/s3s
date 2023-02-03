@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-2 logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="col-sm-3 logo_desc">
+					<p>Уютная</p>
+					<p>Стоматология в Томске</p>
+				</div>
+				<div class="col address">
+					<p><a href="/contacts/#contactsmap">г. Томск, пр. Комсомольский 44</a></p>
+					<p>пн-сб: 9:00—20:00</p>
+
+				</div>
+				<div class="col-sm-2 phone">
+					<p><a href="tel:3822 24-88-88"><em>3822</em> 24-88-88</a></p>
+					<p class="msg">Написать нам<a href="whatsapp://send?phone=79627783338" target="_blank" class="btn-wa"></a><a href="https://telegram.im/@premierdent" target="_blank" class="btn-tg"></a></p>
+				</div>
+				<div class="col call_me">
+					<button class="btn call_me_btn" onclick="popup()">Записаться <span class="mobile_hidden">на прием</span></button>
+				</div>
+				<div class="col burger_menu" onclick="mobile_menu()">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col menu">
+					<ul>
+						<li><a href="">Услуги</a>
+							<div class="submenu">
+								<ul>
+									<li><a>Лечение кариеса</a></li>
+									<li><a>Ульразвуковая чистка зубов</a></li>
+									<li><a>Отбеливание зубов</a></li>
+									<li><a>Удаление зубов</a></li>
+									<li><a>Имплантация</a></li>
+									<li><a>Установка брекетов</a></li>
+								</ul>
+								<hr>
+								<ul>
+									<li><a>Профилактика зубов в Томске</a></li>
+									<li><a>Лечение зубов в Томске</a></li>
+									<li><a>Протезирование на имплантах в Томске</a></li>
+									<li><a>Микропротезирование зубов в Томске</a></li>
+									<li><a>Несъемное протезирование в Томске</a></li>
+									<li><a>Съемное протезирование в Томске</a></li>
+									<li><a>Временное протезирование в Томске</a></li>
+									<li><a>Ортодонтия в Томске</a></li>
+									<li><a>Хирургическая стоматология в Томске</a></li>
+								</ul>
+							</div>
+
+						</li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">О Стоматологии</a></li>
+						<li><a href="">Специалисты</a></li>
+						<li><a href="">Работы</a></li>
+						<li><a href="">Цены</a></li>
+						<li><a href="">Оплата</a></li>
+						<li><a href="">Пациентам</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><form>
+							<input type="text" placeholder="Поиск по сайту" name="search">
+							<button type="submit" class="submit search_submit">Поиск</button>
+						</form></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mobile_menu popup_bg ">
+		<div class="close_popup " onclick="close_popup_menu()" ></div>
+		<div class="popup popup_active" id="popup">
+			<div class="menu">
+				<ul>
+					<li onclick="open_submenu()">Услуги
+						<div class="submenu">
+							<ul>
+								<li><a>Лечение кариеса</a></li>
+								<li><a>Ульразвуковая чистка зубов</a></li>
+								<li><a>Отбеливание зубов</a></li>
+								<li><a>Удаление зубов</a></li>
+								<li><a>Имплантация</a></li>
+								<li><a>Установка брекетов</a></li>
+							</ul>
+							<hr>
+							<ul>
+								<li><a>Профилактика зубов в Томске</a></li>
+								<li><a>Лечение зубов в Томске</a></li>
+								<li><a>Протезирование на имплантах в Томске</a></li>
+								<li><a>Микропротезирование зубов в Томске</a></li>
+								<li><a>Несъемное протезирование в Томске</a></li>
+								<li><a>Съемное протезирование в Томске</a></li>
+								<li><a>Временное протезирование в Томске</a></li>
+								<li><a>Ортодонтия в Томске</a></li>
+								<li><a>Хирургическая стоматология в Томске</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О Стоматологии</a></li>
+					<li><a href="">Специалисты</a></li>
+					<li><a href="">Работы</a></li>
+					<li><a href="">Цены</a></li>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Пациентам</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li>
+						<form>
+							<input type="text" placeholder="Поиск по сайту" name="search">
+							<button type="submit" class="submit search_submit">Поиск</button>
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div class="address">
+				<p><a href="/contacts/#contactsmap">г. Томск, пр. Комсомольский 44</a></p>
+				<p>пн-сб: 9:00—20:00</p>
+
+			</div>
+			<div class="phone">
+				<p><a href="tel:3822 24-88-88"><em>3822</em> 24-88-88</a></p>
+				<p class="msg">Написать нам<a href="whatsapp://send?phone=79627783338" target="_blank" class="btn-wa"></a><a href="https://telegram.im/@premierdent" target="_blank" class="btn-tg"></a></p>
+			</div>
+		</div>
+	</div>
+	<section class="first_section">
+		<div class="container">
+			<div class="block">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 left">
+						<div class="navbar">
+							<ul>
+								<li><a href="">Главная</a></li>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Хирургическая стоматология в Томске</a></li>
+								<li><span>Имплантация</span></li>
+							</ul>
+						</div>
+						<h1>Имплантация зубов доступная для всех</h1>
+						<div class="content">
+							<div class="text_label">
+								<p>Цены ниже уже не будет!</p>
+							</div>
+							<div class="main_text">
+								<div class="img"><img src="img/implant.jpg" alt=""></div>
+								<div class="cont">
+									<div class="title">Установка Немецких имплантов "MeDent"</div>
+									<div class="price">
+										<p><span class="old_price">25 000 руб</span></p>
+										<p><span class="new_price">13 000 руб</span></p>
+										<p><span class="text">За хирургический этап</span></p>
+									</div>
+
+								</div>
+								<div class="call_me">
+									<button class="btn call_me_btn" onclick="popup()">Записаться на консультацию</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 right">
+						<div class="video-container">
+							<iframe class="youtubevideo" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/ZwSUompP9Q8?showinfo=0&amp;rel=0&amp;playsinline=1"></iframe>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<section class="what_is_implantation">
+		<div class="container">
+			<div class="text">
+				<h2>Что такое Имплантация?</h2>
+				<p>Имплантация помогает воссоздать искусственный зубной ряд, неотличимый от натурального. В случае, если разрушены отдельные зубы, то на их месте можно поставить имплантаты, не обтачивая соседние зубы для создания моста.
+	В процессе операции стоматолог-хирург вкручивает титановый шуруп в костную ткань верхней или нижней челюсти. Имплантат становится аналогом корня зуба. Впоследствии, когда кость прирастет к импланту, на него ставят постоянную коронку, имитирующую естественный зуб.</p>
+				<p>Свойство титана срастаться с костной тканью было обнаружено случайно в 1952 годах шведом Бранемарком, стоит заметить что наша стоматология как раз использует шведские имплантаты, качество которых неоднократно проверено временем. С того момента имплантация как направление в стоматологии начала развиваться семимильными шагами. Уже накоплен практический опыт наблюдений, как в дальнейшем ведет себя титановый шуруп: он не вызывает аллергии и других побочных эффектов, приживаемость приближается к 99%. То есть, за исключением ничтожно малой вероятности, у каждого пациента процесс пройдет успешно. Однако у процедуры есть противопоказания (временные или абсолютные), о них нужно узнавать заранее на консультации у врача.</p>
+			</div>
+		</div>
+
+	</section>
+	<section class="special_card">
+		<div class="container">
+			<div class="box">
+				<div class="left">
+					<div class="img">
+						<img src="img/cta-man.png" alt="">
+						<div class="call_me">
+							<button  onclick="popup()">Записаться на прием</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="sub_post">Главный врач, стоматолог-ортопед, хирург, имплантолог в Томске</div>
+					<div class="expert">Прокопенко Константин Владимирович</div>
+					<div class="experience">Стаж работы 12 лет</div>
+					<div class="desc">
+						<p>Имплантация зубов: в чем заключается методика и как проходит процедура.</p>
+						<p>В современном мире потеря зубов — не приговор. Теперь есть возможность полностью восстановить зубной ряд с помощью процедуры имплантации. Подходит ли она вам</p>
+					</div>
+					<div class="certificates">
+						<div class="items">
+							<div class="item">
+								<img src="img/1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/4.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/5.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/6.jpg" alt="">
+							</div>
+						</div>
+
+
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="pricing">
+		<div class="back_box">
+			<div class="container">
+				<h2>Как формируется стоимость имплантации?</h2>
+				<p>Имплантацию под ключ можно разделить на два этапа:</p>
+				<div class="implant_steps">
+					<div class="row">
+						<div class="col-sm-12 col-md-5 left" >
+							<div class="box">
+								<div class="h">
+									1. Хирургический этап
+								</div>
+								<div class="items">
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_implant.jpg" alt="">
+										</div>
+										<div class="text">Имплант «MeDent»</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_zaglush.jpg" alt="">
+										</div>
+										<div class="text">Заглушка</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_anast.jpg" alt="">
+										</div>
+										<div class="text">Анестезия</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_rabota.jpg" alt="">
+										</div>
+										<div class="text">Работа врача</div>
+									</div>
+								</div>
+								<div class="price_summary">
+									<p>Цена за 1 этап <span class="old_price">25 000 руб.</span> <span class="new_price">13 000 руб.</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-2 center-box">
+							<div class="box">
+								<p>ЧЕРЕЗ 3-6 МЕСЯЦЕВ</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-5 right">
+							<div class="box">
+								<div class="h">
+									2. Ортопедический этап
+								</div>
+								<div class="items">
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_formdesn.jpg" alt="">
+										</div>
+										<div class="text">Формирователь десны</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_abatm.jpg" alt="">
+										</div>
+										<div class="text">Титановое основание</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_koronka.jpg" alt="">
+										</div>
+										<div class="text">Коронка из диоксида циркония</div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="/img/implant_rabota.jpg" alt="">
+										</div>
+										<div class="text">Работа врача</div>
+									</div>
+								</div>
+								<div class="price_summary">
+									<p>Цена за 2 этап <span class="old_price">40 000 руб.</span> <span class="new_price">35 000 руб.</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form_implant">
+					<div class="implant">
+						<div class="box">
+							<p class="h">
+								Итого готовый зуб за <span class="old_price">65 000 руб.</span> <span class="new_price">48 000 руб.</span>
+							</p>
+							<p>Успейте забронировать вашу цену!</p>
+							<form action="">
+								<div class="items">
+									<div class="item"><input type="tel" placeholder="Укажите ваш телефон"></div>
+									<div class="item">
+										<button>Забронировать стоимость</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<section class="variants_implantation">
+		<div class="container">
+			<h2>Мы подобрали наиболее надёжные варианты имплантов</h2>
+			<div class="block">
+				<div class="items">
+					<div class="item">
+						<div class="box">
+							<div class="img">
+								<img src="/img/medent_logo.jpg" alt="">
+							</div>
+							<div class="title">MeDent</div>
+							<div class="country">Германия</div>
+							<div class="desc">
+								<p>Хорошее соотношение цены и качества, обширная линейка позволяет подбирать импланты с учетом особенностей челюсти</p>
+								<hr>
+							</div>
+							<div class="price">
+								<p>Цена <span class="old_price">25 000</span> <span class="new_price">13 000 руб</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<div class="img">
+								<img src="/img/astra_logo.jpg" alt="">
+							</div>
+							<div class="title">Аstra Tech</div>
+							<div class="country">Швеция</div>
+							<div class="desc">
+								<p>Хорошая приживаемость, никакого гальванического эффекта и максимальная совместимость с тканями ротовой полости</p>
+								<hr>
+							</div>
+							<div class="price">
+								<p>Цена <span class="new_price">45 000 руб</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2>Все зубы за один день — сделал и забыл!</h2>
+			<div class="block">
+				<div class="items">
+					<div class="item">
+						<div class="box">
+							<p class="img">
+								<img src="/img/implant_allon2.jpg" alt="">
+							</p>
+							<div class="title">Протез на 2-х имплантах</div>
+							<div class="desc">
+								<ul>
+									<li>установка 2-х имплантов: 26 000 руб</li>
+									<li>установка 2-х формирователей: 10 000 руб</li>
+									<li>протез на имплантах: 80 000 руб.</li>
+								</ul>
+								<hr>
+							</div>
+							<div class="price">
+								<p>Цена <span class="new_price">116 000 руб</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="img">
+								<img src="/img/implant_allon4.jpg" alt="">
+							</p>
+							<div class="title">Протез на 4-х имплантах несъёмный</div>
+							<div class="desc">
+								<ul>
+									<li>установка 4-х имплантов 52 000 руб</li>
+									<li>установка 4-х формирователей: 20 000 руб</li>
+									<li>несъёмный протез на 4-х имплантах: 120 000 руб.</li>
+								</ul>
+								<hr>
+							</div>
+							<div class="price">
+								<p>Цена <span class="new_price">192 000 руб</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="img">
+								<img src="/img/implant_allon4-2.jpg" alt="">
+							</p>
+							<div class="title">Протез на 4-х имплантах съёмный на балке</div>
+							<div class="desc">
+								<ul>
+									<li>установка 4-х имплантов 52 000 руб</li>
+									<li>установка 4-х формирователей: 20 000 руб</li>
+									<li>съёмный протез на 4-х имплантах на балке: 160 000 руб.</li>
+								</ul>
+								<hr>
+							</div>
+							<div class="price">
+								<p>Цена <span class="new_price">232 000 руб</span></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<h2>Отзывы об имплантации зубов от наших пациентов</h2>
+			<div class="block">
+				<div class="items">
+					<div class="item">
+						<iframe class="youtubevideo" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/jnMfIzEGkII?showinfo=0&amp;rel=0&amp;playsinline=1"></iframe>
+					</div>
+					<div class="item">
+						<iframe class="youtubevideo" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/sdgSb0OqYqk?showinfo=0&amp;rel=0&amp;playsinline=1"></iframe>
+					</div>
+					<div class="item">
+						<iframe class="youtubevideo" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/5NUBGRjIT90?showinfo=0&amp;rel=0&amp;playsinline=1"></iframe>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="question">
+		<div class="container">
+			<h2>Популярные вопросы про имплантацию</h2>
+			<div class="question_block">
+				<div class="items">
+					<div class="item">
+						<div class="question" data-bs-toggle="collapse" href="#quest1" role="button" aria-expanded="false" aria-controls="quest1">Нужна ли специальная подготовка к процедуре имплантации?</div>
+						<div class="answer collapse" id="quest1">
+							<p>Конечно, хирургическую процедуру не сравнить с лечением кариеса, но это менее травматичный процесс чем удаление зубов. Врач заранее должен видеть всю картину полости рта, поэтому назначает компьютерную томографию. Он оценивает состояние костной ткани и уровень десны. Бывает, что объем костной ткани утрачен, и тогда заранее планируется костная пластика — процедура ее восполнения. Она проводится одномоментно с имплантацией.
+Кроме того, врач оценивает общий анамнез пациента, в частности, узнает об аллергии к анестезирующим препаратам. Также важный момент, который во многом зависит от самого пациента — позитивный психологический настрой.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="question" data-bs-toggle="collapse" href="#quest2" role="button" aria-expanded="false" aria-controls="quest2">Как происходит сама процедура имплантации?</div>
+						<div class="answer collapse" id="quest2">
+							<p>Во время процедуры врач создает ложе для импланта, при необходимости проводит костную пластику. Вся процедура проходит под местной анестезией, и пациент ничего не чувствует.
+Иногда хирург совмещает удаление зуба и имплантацию в свежую лунку. Также возможна одномоментная установка нескольких имплантов. При полной потере зубного ряда возможна операция по специальной технологии: на каждую челюсть ставят по 4 шурупа, что позволяет полностью решить проблему пациента.</p>
+							<div class="steps">
+								<div class="itemsteps">
+									<div class="img"><img src="/img/implant_step_1.jpg" alt=""></div>
+									<div class="desc">Формирование ложа для установки импланта</div>
+								</div>
+								<div class="itemsteps">
+									<div class="img"><img src="/img/implant_step_2.jpg" alt=""></div>
+									<div class="desc">Установленный имплант и формирователь десны</div>
+								</div>
+								<div class="itemsteps">
+									<div class="img"><img src="/img/implant_step_3.jpg" alt=""></div>
+									<div class="desc">Установленный имплант с абантментом и коронкой</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="question" data-bs-toggle="collapse" href="#quest3" role="button" aria-expanded="false" aria-controls="quest3">Как проходит реабилитация после процедуры?</div>
+						<div class="answer collapse" id="quest3">
+							<p>Это не особо травматичная операция, и после нее пациент сохраняет полную работоспособность. В редких случаях на лице могут появиться отек и гематомы.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="question" data-bs-toggle="collapse" href="#quest4" role="button" aria-expanded="false" aria-controls="quest4">Когда можно ставить постоянные коронки?</div>
+						<div class="answer collapse" id="quest4">
+							<p>Если имплантация проходила в зоне улыбки и пациенту необходимо хорошо выглядеть, то практически сразу хирург ставит временную коронку на титановый шуруп. Однако она несет лишь декоративную функцию, на нее нельзя давать нагрузку. Когда станет понятно, что титановый шуруп благополучно интегрировался, можно будет заняться постоянной коронкой. Как правило, это происходит через 2–3 месяца после операции.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="price_list">
+		<div class="container">
+			<h2>Стоимость</h2>
+			<div class="block">
+				<div class="table_list">
+					<table class="table table-responsive">
+						<tbody>
+							<tr>
+								<th class="title">Наименование услуги</th>
+								<th class="price">Цена руб.</th>
+							</tr>
+							<tr>
+								<td>Использование имплантата «MeDent».</td>
+								<td class="price">13 000</td>
+							</tr>
+							<tr>
+								<td>Использование имплантата «Аstra Tech».</td>
+								<td class="price">45 000</td>
+							</tr>
+							<tr>
+								<td>Применение костных заменителей, «Остеоматрикс» 1 мл.</td>
+								<td class="price">7 500</td>
+							</tr>
+							<tr>
+								<td>Применение костных заменителей , «OSSIX Bone» 5*5*5.</td>
+								<td class="price">15 000</td>
+							</tr>
+							<tr>
+								<td>Применение резорбируемой мембраны «OSSIXR Plus» 15*25 мм.</td>
+								<td class="price">18 000</td>
+							</tr>
+							<tr>
+								<td>Применение резорбируемой мембраны «Биоматрикс» 15*20 мм.</td>
+								<td class="price">7 500</td>
+							</tr>
+							<tr>
+								<td>Использование перфорированной пластины для направленной костной регенерации.</td>
+								<td class="price">15 000</td>
+							</tr>
+							<tr>
+								<td>Использование винта или пина.</td>
+								<td class="price">1 500</td>
+							</tr>
+							<tr>
+								<td>Использование формирователя десны «MeDent».</td>
+								<td class="price">5 000</td>
+							</tr>
+							<tr>
+								<td>Использование формирователя десны «Аstra Tech».</td>
+								<td class="price">3 500</td>
+							</tr>
+							<tr>
+								<td>Повязка (турунда) с препаратом «Йодоформ».</td>
+								<td class="price">500</td>
+							</tr>
+							<tr>
+								<td>Применение материала «Альвостаз».</td>
+								<td class="price">500</td>
+							</tr>
+							<tr>
+								<td>Применение материала «Альвожель».</td>
+								<td class="price">500</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="call_me_form">
+		<div class="container">
+			<div class="box">
+				<div class="title">
+					<p class="text_label">
+						МЫ ЗАФИКСИРОВАЛИ ЦЕНЫ
+					</p>
+					<p class="h">
+						Узнайте сколько будет стоить ваше лечение
+					</p>
+					<p class="text">
+						Отправьте заявку или позвоните <a href="tel:3822 24-88-88">3822 24-88-88</a>
+					</p>
+				</div>
+				<div class="forms">
+					<form action="">
+
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="text" name="phone" placeholder="Ваш телефон">
+						<button  onclick="popup()">Рассчитать стоимость</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="other_services">
+		<div class="container">
+			<h2>Сопутствующие услуги</h2>
+			<div class="block">
+				<div class="items">
+					<div class="item">
+						<div class="box">
+							<p class="h"><a href="">Костная пластика</a></p>
+							<p class="price">Стоимость от 16 000 руб.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="h"><a href="">Удаление зубов</a></p>
+							<p class="price">Стоимость от 3 500 руб.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="h"><a href="">Слизистая пластика</a></p>
+							<p class="price">Стоимость от 8 000 руб.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="line">
+	<section class="works">
+		<div class="container">
+			<h2>Примеры наших работ</h2>
+			<div class="block">
+				<div class="slider">
+					<div class="item">
+						<div class="box">
+							<p class="h">Установка трёх имплантатов</p>
+							<div class="img_box">
+								<div class="img">
+									<img src="/img/thumb/6-1.jpg" alt="">
+								</div>
+							</div>
+
+							<div class="desc">
+								<p>Пациентка длительное время носила съемный протез, обратилась ко мне с целью перепротезирования. Ей было предложено избавиться от съемного протеза, на что она с радостью согласилась. Была проведена операция установки трёх имплантатов Alpha Bio, и через три месяца изготовление новых металлокерамических коронок на свои зубы и металлокерамических коронок на цементной фиксации на индивидуальных циркониевых абатментах на имплантаты.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="h">Комплекс: импланты + протезирование</p>
+							<div class="img_box">
+								<div class="img">
+									<img src="/img/thumb/3.jpg" alt="">
+								</div>
+							</div>
+							<div class="desc">
+								<p></p>
+
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="h">Имплантация и реставрация</p>
+							<div class="img_box">
+								<div class="img">
+									<img src="/img/thumb/9-1.jpg" alt="">
+								</div>
+								<div class="img2">
+									<div class="img2_box">
+										<div class="img2_item">
+											<img src="/img/thumb/9-2.jpg" alt="">
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="desc">
+								<p></p>
+
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<p class="h">Имплантация зубов</p>
+							<div class="img_box">
+								<div class="img">
+									<img src="/img/thumb/implatnaciya-2.jpg" alt="">
+								</div>
+								<div class="img2">
+									<div class="img2_box">
+										<div class="img2_item">
+											<img src="/img/thumb/implatnaciya-1.jpg" alt="">
+										</div>
+										<div class="img2_item">
+											<img src="/img/thumb/implatnaciya-1.jpg" alt="">
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="desc">
+								<p></p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="line">
+	<section class="promotion">
+		<div class="container">
+			<h2>Действующие акции </h2>
+			<div class="block">
+				<div class="items">
+					<div class="item">
+						<div class="box">
+							<div class="img"><img src="img/profgigiena.jpg" alt=""></div>
+							<div class="text">
+								<p class="h">Профессиональная гигиена со скидкой</p>
+								<p>Годовой абонемент на 3 профессиональные гигиены полости рта на Air-Flow Prophylactic Masters</p>
+								<p>Всего 11 000 рублей вместо 16 500 рублей</p>
+							</div>
+
+							<div class="btns">
+								<button onclick="popup()">Записаться на прием</button>
+							</div>
+						</div>
+
+					</div>
+					<div class="item">
+						<div class="box">
+							<div class="img"><img src="img/531531.jpg" alt=""></div>
+							<div class="text">
+								<p class="h">Имлантаты доступные для всех!</p>
+								<p>Цены ниже уже не будет! Установка надежных немецких имплантов всего 13 000 руб.</p>
+								<p>Дайте возможность себе и своим близким почувствовать вкус жизни! Жевать и улыбаться с комфортом без страха боли и потери конструкции теперь доступно в любом возрасте!</p>
+							</div>
+							<div class="btns">
+								<button onclick="popup()">Записаться на прием</button>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box">
+							<div class="img"><img src="img/profgigiena.jpg" alt=""></div>
+							<div class="text">
+								<p class="h">Комплексная профессиональная гигиена на новом аппарате AirFlow</p>
+								<p>Чистка зубов от 4 500 руб. + фторирование в подарок.</p>
+								<p>В день рождения (3 дня до и 3 дня после) скидка 20%!</p>
+							</div>
+
+							<div class="btns">
+								<button onclick="popup()">Записаться на прием</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="line">
+	<section class="coupons">
+		<div class="container">
+			<h2>Купоны</h2>
+		</div>
+	</section>
+	<section class="specialists">
+		<div class="container">
+			<h2>Специалисты нашей клиники</h2>
+			<div class="slider_specialists">
+				<div class="item">
+					<div class="img"><img src="/img/prokopenko.jpg" alt=""></div>
+					<div class="btn_priem call_me"><button  onclick="popup()">Записаться на прием</button></div>
+					<div class="h name">Прокопенко Константин Владимирович</div>
+					<div class="status">Главный врач, стоматолог-ортопед, хирург, имплантолог в Томске</div>
+					<div class="desc">
+						<p>Не стою на месте и продолжаю совершенствоваться в своем ремесле!</p>
+						<p>Девиз по жизни "Делай хорошо, либо не делай совсем"</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/prokopenko_galina.jpg" alt=""></div>
+					<div class="btn_priem call_me"><button onclick="popup()">Записаться на прием</button></div>
+					<div class="h name">Прокопенко Галина Андреевна</div>
+					<div class="status">Врач ортодонт в Томске. Пародонтолог</div>
+					<div class="desc">После неудачного ортодонтического лечения я твёрдо решила сама стать ортодонтом, чтобы делать улыбку не только красивой, но и здоровой! Мой девиз: Дело жизни - это не дело, а жизнь.</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/prokopenko_daniil.jpg" alt=""></div>
+					<div class="btn_priem call_me"><button onclick="popup()">Записаться на прием</button></div>
+					<div class="h name">Прокопенко Даниил Владимирович</div>
+					<div class="status">Врач стоматолог-терапевт, -ортопед в Томске</div>
+					<div class="desc">Превратил хобби в работу и получаю от нее максимальное удовольствие!</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/dsc00874r_1.jpg" alt=""></div>
+					<div class="btn_priem call_me"><button onclick="popup()">Записаться на прием</button></div>
+					<div class="h name">Кристина Игоревна Швецова</div>
+					<div class="status">Врач стоматолог - терапевт в Томске</div>
+					<div class="desc">Улыбка - это лучше, что есть в человеке. Она делает нас счастливыми, и заражает хорошим настроением окружающих. А красивая улыбка - это не только уверенность в себе, но и ключик ко всем дверям.</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/boguslavskayakarinavadimovna.jpg" alt=""></div>
+					<div class="h name">Богуславская Карина Вадимовна</div>
+					<div class="status">Ассистент стоматолога (в декретном отпуске)</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/konovalovaolganikolaevna.jpg" alt=""></div>
+					<div class="h name">Коновалова Ольга Николаевна</div>
+					<div class="status">Ассистент стоматолога</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/lebedevaantoninapavlovna.jpg" alt=""></div>
+					<div class="h name">Лебедева Антонина Павловна</div>
+					<div class="status">Помощник ассистента</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/hachaturyan_margarita.jpg" alt=""></div>
+					<div class="h name">Хачатурян Маргарита Славиковна</div>
+					<div class="status">Администратор</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/kudryashova-ekaterina-rinatovna.jpg" alt=""></div>
+					<div class="h name">Кудряшова Екатерина Ринатовна</div>
+					<div class="status">Администратор</div>
+				</div>
+				<div class="item">
+					<div class="img"><img src="/img/peregonmarinaaleksandrovna-1.jpg" alt=""></div>
+					<div class="h name">Перегон Марина Александровна</div>
+					<div class="status">Администратор</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="comments">
+		<div class="container">
+			<h2>Отзывы о нашей работе</h2>
+			<div class="slider_comments">
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Доверие на 10000%</div>
+							<div class="desc">Хочу выразить огромную благодарность доктору Рябцовских Николаю Михайловичу! Уже не первый раз лечу у него зубы и при необходимости вернусь к нему снова. Хочу отметить его профессионализм и умение работать с пациентом, поддержку. 7 лет назад проходила у него лечение в первые и после этого даже не было мысли обратиться к другому доктору. Доверие на 10000%. <br>Отдельное спасибо администраторам клиники за индивидуальный подход, за внимательность и всегда хорошее настроение.</div>
+						</div>
+						<div class="name">
+							<p class="fio">Валентина</p>
+							<p class="date">16 Мая 2021</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Всё прошло на высшем уровне</div>
+							<div class="desc">26.11.2021 была у Даниила Владимировича. У меня был очень тяжёлый случай с зубом, он целый час пытался решить эту проблему, придумывал все пути. Несмотря на все старания, скорее всего, зуб пойдет на удаление. Но на данный момент пока не ясно, мы решили его оставить для брекетов. Проблема, по факту, не была решена, но мне было приятно от того, что со мной работает такой врач)<br>Также в пятницу 03.12.2021 была на профессиональной чистке и на установке брекет-системы. Впервые ходила на эти процедуры, даже боялась какой-то боли и большого дискомфорта. Но всё прошло на высшем уровне.<br>Наталья Ивановна на чистке помимо того, что сделала всё максимально бережно, не больно и быстро, ещё и рассказала мне о том, как правильно следить за своими зубами и как пользоваться ирригатором</div>
+						</div>
+						<div class="name">
+							<p class="fio">Дарья</p>
+							<p class="date">6 Декабря 2021</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">За услугами терапевта приду снова в эту клинику!</div>
+							<div class="desc">Беспокоил зуб мудрости. Обратилась в ПремьерДент к Прокопенко, через 10 минут была уже без зуба) все безболезненно и чисто. Надеюсь, удалять больше ничего не буду, но за услугами терапевта приду снова в эту клинику!</div>
+						</div>
+						<div class="name">
+							<p class="fio">Елизавета</p>
+							<p class="date">10 Октября 2020</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title"></div>
+							<div class="desc">Благодарна Касаткиной Н.И за качественную работу, внимательный осмотр всех зубов , чистку и рекомендации по уходу. Состояние десен заметно улучшилось, рекомендую Наталью Ивановну как классного специалиста!</div>
+						</div>
+						<div class="name">
+							<p class="fio">Лариса Анатольевна</p>
+							<p class="date">29 Авгутса 2022</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Владимир Вячеславович очень хороший специалист</div>
+							<div class="desc">Пришла в клинику Премьер-Дент к доктору терапевту на консультацию, доктор Владимир Вячеславович очень хороший специалист, сделал осмотр полости рта. Дал бесплатное направление на К. Т. (КОМПЬЮТЕРНАЯ ТОМОГРАФИЯ) Было очень приятно. Спасибо.</div>
+						</div>
+						<div class="name">
+							<p class="fio">Светлана</p>
+							<p class="date">24 Июня 2020</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Сделали все быстро и качественно</div>
+							<div class="desc">Небольшая уютная стоматология с профессиональным и дружелюбным коллективом. Сделали все быстро и качественно. С удовольствием приду ним ещё раз. Интересная система скидок и акций. Рекомендую.</div>
+						</div>
+						<div class="name">
+							<p class="fio">Александр Аким</p>
+							<p class="date">3 Мая 2019</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">На этот раз выбрала ПремьерДент и не пожалела</div>
+							<div class="desc">Случилось мне лечить зубы после неудачного посещения стоматолога. На этот раз выбрала ПремьерДент. И не пожалела. С июля с.г. посещаю. Отношение к пациентам предупредительное, по-домашнему заботливое. Работы со моими зубами было много, но надеюсь, что в Новый год войду без проблем. На днях у мужа случилась зубная боль, на что я ему: "Только в ПремьерДент!"<br>А вечером соседка звонит с подобным недугом. И ей дала ваш адрес. Профессиональная компетентность, умелый психологический подход к пациентам у всех специалистов. Но особо хочу отметить глав.врача Константина Владимировича Прокопенко, лечащего врача Альвину Арменовну Айрапетян. Это благодаря их умелым рукам, тактичному подходу я чувствовала себя комфортно. Впервые за всё время лечения у меня не было болевых ощущений. А какие приветливые девочки на рецепшене!<br>Дай Бог всему коллективу ПремьерДент здоровья, благополучия, и впредь терпения с нами, пациентами.<br>А лучшей оценкой вашей работы будут мои рекомендации всем моим друзьям и знакомым.</div>
+						</div>
+						<div class="name">
+							<p class="fio">Мария Иннокентьевна Пахорукова</p>
+							<p class="date">2 Декабря 2021</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Очень хорошие доктора</div>
+							<div class="desc">Очень хорошие доктора,не навязывают лишнее,цены не дорогие по сравнению с другими стоматологиями,спасибо большое!</div>
+						</div>
+						<div class="name">
+							<p class="fio">Мирошниченко Вероника</p>
+							<p class="date">18 Мая 2022</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Ни разу не пожалела, что пришла именно в эту клинику</div>
+							<div class="desc">Спасибо врачу Даниилу Владимировичу! Лечение прошло абсолютно безболезненно, быстро и качественно, ни разу не пожалела, что пришла именно в эту клинику.</div>
+						</div>
+						<div class="name">
+							<p class="fio">Буяна</p>
+							<p class="date">6 Февраля 2021</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="box">
+						<div class="comment">
+							<div class="title">Имплантация зубов</div>
+							<div class="desc"><p>Видео отзыв нашей пациентки</p><p><iframe width="100%" height="260" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/wIHoxFbhrME"></iframe></p></div>
+						</div>
+						<div class="name">
+							<p class="fio">Премьер Дент</p>
+							<p class="date">7 Февраля 2022</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="call_me_form2">
+		<div class="container">
+			<div class="box">
+				<div class="title">
+
+					<p class="h">
+						Не знаете с чего начать?
+					</p>
+					<p class="text">
+						Отправьте заявку или позвоните <a href="tel:3822 24-88-88">3822 24-88-88</a>
+					</p>
+					<div class="forms">
+						<form action="">
+							<div class="item">
+								<input type="text" name="name" placeholder="Ваше имя">
+							</div>
+							<div class="item">
+								<input type="text" name="phone" placeholder="Ваш телефон">
+							</div>
+							<div class="item">
+								<button>Жду звонка</button>
+							</div>
+
+
+
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="footer_menu">
+		<div class="container">
+			<div class="items">
+				<div class="item">
+					<p class="h">О КЛИНИКЕ</p>
+					<ul>
+						<li>Сертификаты</li>
+						<li>Акции</li>
+						<li>Специалисты</li>
+						<li>Работы</li>
+						<li>Цены</li>
+						<li>Отзывы</li>
+					</ul>
+				</div>
+				<div class="item">
+					<p class="h">ЛЕЧЕНИЕ ЗУБОВ</p>
+					<ul>
+						<li>
+							<a href="/catalog/lechenie_kariesa/">Лечение кариеса</a>
+						</li>
+						<li>
+							<a href="/catalog/lechenie_pulpita/">Лечение пульпита</a>
+						</li>
+						<li>
+							<a href="/catalog/lechenie_periodontita/">Лечение периодонтита</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item">
+					<p class="h">ПРОФИЛАКТИКА ЗУБОВ</p>
+					<ul>
+						<li>
+							<a href="/catalog/ultrazvukovaya_chistka_zubov/">Ультразвуковая чистка зубов</a>
+						</li>
+						<li>
+							<a href="/catalog/chistka_zubov_air_flow/">Чистка зубов Air Flow</a>
+						</li>
+						<li>
+							<a href="/catalog/otbelivanie_zubov/">Отбеливание зубов</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item">
+					<p class="h">ОРТОДОНТИЯ</p>
+					<ul>
+						<li>
+							<a href="/catalog/ispravlenie_prikusa_breketami/">Исправление прикуса брекетами</a>
+						</li>
+						<li>
+							<a href="/catalog/korrekciya_prikusa_u_detey_plastinkami/">Коррекция прикуса у детей пластинками</a>
+						</li>
+						<li>
+							<a href="/catalog/sohranenie_mesta_posle_udaleniya_zubov/">Сохранение места, после удаления зубов</a>
+						</li>
+						<li>
+							<a href="/catalog/ispravlenie_polozheniya_zuba_pered_ortopedicheskim_lecheniem/">Исправление положения зуба перед ортопедическим лечением</a>
+						</li>
+					</ul>
+				</div>
+				<div class="item">
+					<p class="h">ХИРУРГИЯ</p>
+					<ul>
+						<li>
+							<a href="/catalog/implantaciya/">Имплантация</a>
+						</li>
+						<li>
+							<a href="/catalog/kostnaya_plastika/">Костная пластика</a>
+						</li>
+						<li>
+							<a href="/catalog/slizistaya_plastika/">Слизистая пластика</a>
+						</li>
+						<li>
+							<a href="/catalog/udalenie_zubov/">Удаление зубов</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="items">
+				<div class="item copyrights">
+					<p class="h">© ООО «Санар», 2013—2023</p>
+					<p class="m0">Лицензия: ЛО-70-01-002555 ОТ 31.05.2019 г.</p>
+					<p>ОГРН 1057002652167 ИНН 7017131340</p>
+					<p class="addition">Имеются противопоказания, необходима консультация специалиста</p>
+					<p class="address m0"><span class="strong">Адрес:</span> г. Томск, пр. Комсомольский 44</p>
+					<p class="address "><span class="strong">Телефоны:</span> 3822 24-88-88, 3822 26-99-72, 8 962-778-33-38</p>
+					<p class="addition">
+						<a href="/personalconsent/">Согласие на обработку персональных данных</a>
+					</p>
+					<div class="socialbtn">
+						<a href="https://vk.com/premierdent.tomsk" class="btn-vk" target="_blank"></a>
+						<a href="http://ok.ru/profile/577394869346" class="btn-ok" target="_blank"></a>
+						<a href="https://www.youtube.com/channel/UCdr3p9kHKhH4GpAY9vKAhhw" class="btn-yt" target="_blank"></a>
+					</div>
+					<p class="author">Разработка сайта — <a href="http://statusagency.ru">Интернет-Агентство Статус</a></p>
+				</div>
+
+				<div class="item reviews_agency">
+					<p class="h">
+						Отзывы о нас
+					</p>
+					<div class="links">
+						<a href="https://prodoctorov.ru/tomsk/lpu/31681-premer-dent/#otzivi" target="_blank">
+							<img src="/img/prodoctorov_logo.svg" alt="4 из 5"></a>
+						</p>
+						<p>
+							<a href="https://tomsk.flamp.ru/firm/premer_dent_stomatologicheskaya_klinika-422740746188265#reviews" target="_blank">
+							<img src="/img/flamp_logo.svg" alt="4.8 из 5"></a>
+						</p>
+						<p>
+							<a href="https://2gis.ru/tomsk/firm/422740746188265/tab/reviews" target="_blank">
+							<img src="/img/2gis_logo.svg" alt="5 из 5"></a>
+						</p>
+						<p>
+							<a href="https://goo.gl/maps/BB6DLZNQuskJXLVw7" target="_blank">
+							<img src="/img/gmaps_logo.svg" alt="5 из 5"></a>
+						</p>
+						<p>
+							<a href="https://yandex.ru/profile/1096079165" target="_blank">
+							<img src="/img/yamaps_logo.svg" alt="4.6 из 5"></a>
+						</p>
+					</div>
+				</div>
+				<div class="item call_me_social">
+					<p class="h">Связаться с нами</p>
+					<div class="phone">
+						<p>
+							<a href="tel:3822 24-88-88" class="ph"><em>3822</em> 24-88-88</a>
+						</p>
+						<p class="msg">Написать нам <a href="whatsapp://send?phone=79627783338" target="_blank" class="btn-wa"></a><a href="https://telegram.im/@premierdent" target="_blank" class="btn-tg"></a>
+						</p>
+						<div class="call_me">
+							<button class="btn call_me_btn" onclick="popup()">Записаться на прием</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup_form popup_bg">
+		<div class="close_popup" onclick="close_popup()" ></div>
+		<div class="popup" id="popup">
+
+			<div class="title">Записаться на прием</div>
+			<form action="">
+				<div class="items">
+					<div class="item">
+						<p class="label">Ваше имя</p>
+						<p><input type="text"></p>
+					</div>
+					<div class="item">
+						<p class="label">Ваш телефон</p>
+						<p><input type="text"></p>
+					</div>
+					<div class="item">
+						<p class="label">Специалист или направление</p>
+						<p><input type="text"></p>
+					</div>
+					<div class="item">
+						<p class="label">Желаемые дата и время</p>
+						<p><input type="text"></p>
+					</div>
+					<div class="item">
+						<p class="label">Пожелания</p>
+						<p><textarea></textarea></p>
+					</div>
+					<div class="soglasie">
+						<p>Нажимая кнопку Записаться, я даю свое согласие на обработку персональных данных</p>
+					</div>
+					<div class="call_me"><button>Записаться</button></div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+</body>
+</html>
