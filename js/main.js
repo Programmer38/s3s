@@ -9,9 +9,12 @@ function open_submenu() {
     submenu.classList.add("sub_active");
   }
 };
-function popup() {
+function popup(el) {
 	//let block_id = el.textContent;
 	//document.querySelector(".popup .text_block span.block_id_popup").innerHTML = block_id;
+	if(el != ""){
+		$(".popup_form .popup #spec_feedback").val(el);
+	}
 	let popupBg = document.querySelector(".popup_form.popup_bg");
 	let popup = document.querySelector(".popup_form .popup");
 	popupBg.classList.add("popup_bg_active");
@@ -27,6 +30,7 @@ function mobile_menu() {
 };
 
 function close_popup() {
+	$(".popup_form .popup #spec_feedback").val("");
 	let popupBg2 = document.querySelector(".popup_form.popup_bg");
 	let popup2 = document.querySelector(".popup_form .popup");
 	popupBg2.classList.remove("popup_bg_active");
